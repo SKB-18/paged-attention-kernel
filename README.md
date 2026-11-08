@@ -1,9 +1,10 @@
 # PagedAttention & Block-Paged KV Cache Engine (`paged-attention-kernel`)
 
-[![Tests](https://img.shields.io/badge/tests-37%20passed-brightgreen.svg)]()
-[![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11-blue.svg)]()
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)]()
-[![License](https://img.shields.io/badge/license-MIT-green.svg)]()
+[![CI](https://github.com/SKB-18/paged-attention-kernel/actions/workflows/ci.yml/badge.svg)](https://github.com/SKB-18/paged-attention-kernel/actions)
+[![Tests: 41 Passed](https://img.shields.io/badge/tests-41%2F41%20passed-brightgreen.svg)](#)
+[![Python: 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](#)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](#)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](#)
 
 Production-grade, tensor-level implementation of **vLLM's PagedAttention algorithm** and block-paged KV cache memory subsystem (Kwon et al., SOSP 2023). Models operating system virtual memory paging, page tables, dynamic allocation, and **Copy-on-Write (CoW)** to eliminate the 60%–80% memory fragmentation waste of large language model serving.
 
